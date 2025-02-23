@@ -19,5 +19,6 @@ interface Address {
     offers: Offers;
     image: string;
     discount: string;
+    description?: string;
   }
   
