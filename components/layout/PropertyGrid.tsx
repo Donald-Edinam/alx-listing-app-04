@@ -1,6 +1,7 @@
 // components/properties/PropertyGrid.tsx
 import { PropertyProps } from '@/interfaces/index';
 import { PropertyCard } from '@/components/common/Card';
+import Link from 'next/link';
 
 interface PropertyGridProps {
   properties: PropertyProps[];
@@ -13,7 +14,9 @@ export const PropertyGrid = ({ properties }: PropertyGridProps) => {
         <h2 className="text-2xl text-gray-800 font-bold mb-8">Featured Properties</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {properties.map((property, index) => (
-            <PropertyCard key={index} property={property} />
+            <Link href={`/property/${property.id}`} key={index}>
+                <PropertyCard property={property} />
+            </Link>
           ))}
         </div>
       </div>

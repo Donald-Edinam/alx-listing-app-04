@@ -20,5 +20,6 @@ interface Address {
     image: string;
     discount: string;
     description?: string;
+    id?: string;
   }
   

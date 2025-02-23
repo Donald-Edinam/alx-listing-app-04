@@ -1,6 +1,7 @@
 {
     "properties": [
       {
+        "id": 1,
         "name": "Villa Ocean Breeze",
         "address": {
           "state": "Seminyak",
@@ -19,6 +20,7 @@
         "discount": ""
       },
       {
+        "id": 2,
         "name": "Mountain Escape Chalet",
         "address": {
           "state": "Aspen",
@@ -38,4 +40,3 @@
       }
     ]
   }
-  
